@@ -13,19 +13,6 @@ function* gen(n){
     }
 };
 
-function hitting(glad, opponent){
-    console.log("[ " + glad.name + " x " + glad.health + " ] hits" +"[ " + opponent.name + " x " + opponent.health + " ] with power " + glad.power )
-    opponent.health -= glad.power;
-    if(opponent.health<=0){
-        //caesar's decision
-        if(d==="Live")
-            opponent.health+=50;
-        else {
-
-        }
-    }
-}
-
 
 function start(n){
     var glads = [];
