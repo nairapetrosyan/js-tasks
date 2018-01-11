@@ -50,7 +50,9 @@ function start(n){
         else if(decision[Math.floor(Math.random()*2)]==="Finish him"){
             console.log("Caesar showed 👎 ")
             glads.splice(glads.indexOf(opponent), 1);
+        
         }
+        return;
     }
         if(elem.health<=0){
             console.log(elem.name+" is dying ")
@@ -63,8 +65,10 @@ function start(n){
             else if(decision[Math.floor(Math.random()*2)]==="Finish him"){
                 console.log("Caesar showed 👎 ")
                 glads.splice(glads.indexOf(elem), 1);
+            
             }
          elem.speed= elem.speed*(elem.health/temp2);   
+         return;
         }
 
        opponent.health = temp;
