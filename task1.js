@@ -44,13 +44,13 @@ return result;
 
 randNames = [ "Ginny", "Bill", "Charlie", "Ron", "George", "Fred"]; 
 
-// (function pushing() {
-//     if(people.length===10)//this is just a condition to check if the code works
-//         return;
-//     var p = new Person(randNames[Math.floor(Math.random() * 6)], Math.floor(Math.random() * 50)+1);
-//     people.push(p);
-//     setTimeout(function() {
-//         pushing();
-//     }, 2000);
-// })();
+(function pushing() {
+    if(people.length===10)//this is just a condition to check if the code works
+        return;
+    var p = new Person(randNames[Math.floor(Math.random() * 6)], Math.floor(Math.random() * 50)+1);
+    people.push(p);
+    setTimeout(function() {
+        pushing();
+    }, 2000);
+})();
 
